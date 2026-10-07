@@ -32,7 +32,7 @@ A verification spike on 2026-10-06 checked the mechanics this rests on (section 
 
 Section 6 says what we would prototype next and lists the questions we need the maintainers to answer before writing more code.
 
-![Technical flow of a confidential cash leg under option C: Create, Fund, Lock, Prove and Settle between the buyer, the settlement agent, the ZK proof program, the DvP program and Token-2022](docs/images/technical-flow.png)
+![Technical flow of a confidential cash leg: Create, Fund, Lock, Prove and Settle between the buyer, the settlement agent, the ZK proof program, the DvP program and Token-2022](docs/images/technical-flow.png)
 
 The overview and this flow as a two page PDF: [docs/confidential-dvp.pdf](docs/confidential-dvp.pdf).
 
@@ -118,6 +118,8 @@ On confidential transfers, the comment above `validate_mint_extensions` says thi
 The test `test_settle_with_confidential_transfer_on_mint_a` (`tests/integration-tests/src/test_token_2022/mod.rs` lines 153 to 181) pins exactly that: a mint with the extension runs the normal public lifecycle.
 
 So the current position is deliberate: mints with the extension are welcome, and confidential movement is excluded by construction. This proposal is about lifting that exclusion as an opt in, not about a bug.
+
+The devnet demo webapp on the `dev` branch (PR #7, merged 2026-09-01) already shows a "Confidential cash leg" option marked as in development, so this proposal studies what that mode needs.
 
 ## 2. Why Token-2022 confidential transfers cannot be used as is
 
