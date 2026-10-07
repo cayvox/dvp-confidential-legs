@@ -32,6 +32,10 @@ A verification spike on 2026-10-06 checked the mechanics this rests on (section 
 
 Section 6 says what we would prototype next and lists the questions we need the maintainers to answer before writing more code.
 
+![Technical flow of a confidential cash leg under option C: Create, Fund, Lock, Prove and Settle between the buyer, the settlement agent, the ZK proof program, the DvP program and Token-2022](docs/images/technical-flow.png)
+
+The overview and this flow as a two page PDF: [docs/confidential-dvp.pdf](docs/confidential-dvp.pdf).
+
 ### Sources and how they are cited
 
 - **DvP**: paths are relative to the repository root at the commit above, with line numbers.
@@ -246,6 +250,10 @@ A prover who is malicious or absent can make an instruction fail. It cannot chan
 Token-2022 confidential transfers hide amounts and balances. They do not hide who trades with whom.
 
 ## 4. Design options
+
+![Overview: the seller funds a public asset escrow, the buyer funds a confidential cash escrow with its own key, and the settlement agent settles both in an atomic swap without seeing the cash amount](docs/images/overview.png)
+
+The same overview on a dark background: [overview-dark.png](docs/images/overview-dark.png).
 
 ### 4.1 Option A: the settlement agent holds the escrow key
 
