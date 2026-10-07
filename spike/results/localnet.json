@@ -1,0 +1,2632 @@
+{
+  "rpcUrl": "http://127.0.0.1:18899",
+  "program": "5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd",
+  "mint": "9DDS93juopqaJBt5ixZXvoAZ2bLuBxFaNspaQmZM7EnP",
+  "steps": [
+    {
+      "name": "setup: mint with ConfidentialTransferMint",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 503,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 484,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 3,
+      "unitsConsumed": 2998,
+      "unitsSource": "transaction",
+      "signature": "rMPho71rLx2dKoydRwqFLHoqca7KhU2727FPn8TRw2v4huBsX4fHJAZetqo7iTbSSVd2i9WwzjEbXDjFZbDVgAc",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: ConfidentialTransferInstruction::InitializeMint",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 927 of 1399850 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: Instruction: InitializeMint2",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1771 of 1398923 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "setup: depositor confidential account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 670,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 652,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 4,
+      "unitsConsumed": 28570,
+      "unitsSource": "transaction",
+      "signature": "3ui4nhq6ZZwPZvijMtsazY2twoSm48FdNGaYNz7E8RETbndBNNT6MAMARFH33AMH3oGwQ6tWHiDMGjDCWSf8aVNz",
+      "err": null,
+      "logs": [
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1447 of 1393160 compute units",
+        "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb qgAAAAAAAAA=",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 736 of 1386891 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1969 of 1383820 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 18453 of 1400000 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: Instruction: Reallocate",
+        "Program log: account needs resize, +299 bytes",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 4904 of 1381547 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: ConfidentialTransferInstruction::ConfigureAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2463 of 1376643 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyPubkeyValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "setup: recipient confidential account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 670,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 652,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 4,
+      "unitsConsumed": 27070,
+      "unitsSource": "transaction",
+      "signature": "34cKoLpx8UmPudttPAStc88AH4NsbiLJmBCJ5sViyKpiq4pMREiCeASZkhGjiz7hQEikgJwrcGfJQYVaZXBCE7b8",
+      "err": null,
+      "logs": [
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1447 of 1394660 compute units",
+        "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb qgAAAAAAAAA=",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 736 of 1388391 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1969 of 1385320 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 16953 of 1400000 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: Instruction: Reallocate",
+        "Program log: account needs resize, +299 bytes",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 4904 of 1383047 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: ConfidentialTransferInstruction::ConfigureAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2463 of 1378143 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyPubkeyValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "setup: mint 1000, deposit 800 to the depositor's confidential balance",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 400,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 380,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 11663,
+      "unitsSource": "transaction",
+      "signature": "5Y2KwoHLtfAs4bMi2KQcVhWanwrg8ExXE8wCg96N3AWzwL7tV8VM6c3tEvzS6bPoKSi7AHkzoNdPm7rFBz8pyeRL",
+      "err": null,
+      "logs": [
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: Instruction: MintTo",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1551 of 1400000 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: ConfidentialTransferInstruction::Deposit",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 9962 of 1398449 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "setup: depositor applies the pending balance",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 387,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 366,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 8172,
+      "unitsSource": "transaction",
+      "signature": "4tKZByjiTWBDkzpTYqkpofWFkW2mJWVWmXtkUUikWuXcAEnr12vRS78TfiXdLDk9iKKfeEbvaaZ8UEfmfUjQwG5c",
+      "err": null,
+      "logs": [
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: ConfidentialTransferInstruction::ApplyPendingBalance",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 8022 of 1400000 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 1: create the PDA's token account (top level)",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 378,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 357,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 18605,
+      "unitsSource": "transaction",
+      "signature": "3TctPkxRW48BBFQxv4nuAsdYQYNhGcVV2M6JubRiW4w4oyeTtnLSAJUXfxNko1yuobsdENZvHupEEkpxJCynn4Gb",
+      "err": null,
+      "logs": [
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1447 of 1393159 compute units",
+        "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb qgAAAAAAAAA=",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 736 of 1386890 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1969 of 1383818 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 18455 of 1400000 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "2.1 Reallocate by CPI",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 377,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 356,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 11860,
+      "unitsSource": "transaction",
+      "signature": "iFF8vwQUuVFvrgZhAfFrdHEiXzkdzsRrroxFpfzt6eapnig8FA4ohzM87TbY8nnpjCLemSZc218S6Kz4dZv6H6H",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: Reallocate",
+        "Program log: account needs resize, +299 bytes",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 4904 of 1393453 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 11710 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 1: pubkey validity proof into a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 527,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 507,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 2900,
+      "unitsSource": "transaction",
+      "signature": "2SUskLAJjquZbJ1ZNvt3mtCRPBSdk5hrL4Bqvx4fvvbUNnsMDZoKriRfQEdd3sRfyT5Y4rk9dCs93kzS5AMpuJDX",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyPubkeyValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "2.2 ConfigureAccount by CPI, proof in a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 453,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 432,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 9083,
+      "unitsSource": "transaction",
+      "signature": "5gaBU8vEN8BiCB7bWcK5wTLNJwmsco6rrQLhb3GwNFLcLVv6scvTfvbCBF7A81LqEX9CWzssHN3KD1eoRaWNBWtn",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::ConfigureAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2113 of 1393439 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 8933 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 1: depositor funds 100 by confidential transfer (top level)",
+      "ok": true,
+      "expected": "pass",
+      "version": 1,
+      "sizeV0": {
+        "size": 3009,
+        "limit": 1232,
+        "fits": false
+      },
+      "sizeV1": {
+        "size": 2993,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 10,
+      "unitsConsumed": 247853,
+      "unitsSource": "transaction",
+      "signature": "4FunYTQs82XDnSfDNZuTJoKEWjw98zHyxe74egkzMWqDBtXDLPLH4JooRHTNp4pTdWuLAxUaQ5feK2qd4xQXKiTE",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyCiphertextCommitmentEquality",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedGroupedCiphertext3HandlesValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedRangeProofU128",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: ConfidentialTransferInstruction::Transfer",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 14703 of 1176750 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "2.3 ApplyPendingBalance by CPI",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 386,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 365,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 14217,
+      "unitsSource": "transaction",
+      "signature": "3wEmVMPWuooJtnV7drVYVFkCSy8mdPomAK5wHQwtp9iC6p6rsPoroyrcwRauxemxzd6BqeBY2h4NZH68feuvuh1r",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::ApplyPendingBalance",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 8022 of 1394132 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 14067 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "2.4 DisableConfidentialCredits by CPI",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 342,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 321,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 7255,
+      "unitsSource": "transaction",
+      "signature": "5mqKtzra3ZDrMuNu5kYyZMGsK8p1Fg98ieS3X6oA6xEa96XpZJwXnoy7cbt2CuVhuDhg4oE4p13TFe4DEXsJWsAT",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::DisableConfidentialCredits",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1060 of 1394132 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 7105 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "2.4b a confidential transfer into the locked escrow is refused",
+      "ok": false,
+      "expected": "fail",
+      "version": 1,
+      "sizeV0": {
+        "size": 3009,
+        "limit": 1232,
+        "fits": false
+      },
+      "sizeV1": {
+        "size": 2993,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 10,
+      "unitsConsumed": 235125,
+      "unitsSource": "simulation",
+      "signature": null,
+      "err": {
+        "InstructionError": [
+          "6",
+          {
+            "Custom": "25"
+          }
+        ]
+      },
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyCiphertextCommitmentEquality",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedGroupedCiphertext3HandlesValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedRangeProofU128",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: ConfidentialTransferInstruction::Transfer",
+        "Program log: Error: Account not accepting deposits or transfers",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 11875 of 1176750 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: custom program error: 0x19"
+      ]
+    },
+    {
+      "name": "escrow 1, transfer of 60: equality proof into a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 752,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 731,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 6700,
+      "unitsSource": "transaction",
+      "signature": "3WmcT1yiWcQNi4d1zdTotZ2qpaQ8gjyo7LipSpHMh2MaNFNvCuJoswfn9JaCRiNd5fJqjoXwyMCzUkgszz6i58qN",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyCiphertextCommitmentEquality",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 1, transfer of 60: validity proof into a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 976,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 955,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 16700,
+      "unitsSource": "transaction",
+      "signature": "5qeuHVsjiCyYbGUYmvuu1vA7tHRrhquJvBhEXxduJ5MRkQkReRyRtp3QQjCqLjgTBPKJ1zF15pexSDuU8E7xC2FM",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedGroupedCiphertext3HandlesValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 1, transfer of 60: range proof into a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 1,
+      "sizeV0": {
+        "size": 1432,
+        "limit": 1232,
+        "fits": false
+      },
+      "sizeV1": {
+        "size": 1411,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 200150,
+      "unitsSource": "transaction",
+      "signature": "5Y5RTWTga2q6NeNWAeaeRLznXyFAtA2E33unXtJoGXS2FGtmN1ZCSTqs96Txo3smxgTpvDWG4XW2aeqGiv2CU4dm",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedRangeProofU128",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "2.5 confidential Transfer by CPI, proofs in context accounts",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 675,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 653,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 22884,
+      "unitsSource": "transaction",
+      "signature": "647PdsZJRdUeTonVA1fuuDka9PiMZvKrFAp3MAMMrWPyCJv56juow4tQS53iGUyyyMPVSWvzyidbZ13xakm3WH2k",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::Transfer",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 14709 of 1392357 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 22734 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "2.6 CloseContextState by CPI, three accounts, PDA is their authority",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 426,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 405,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 20512,
+      "unitsSource": "transaction",
+      "signature": "5Cwi2zGy3Axefj1GEd2nogFXmm7adEHpzLrKvxzg4EutQsfCMvxDyKsbnxBLgYpfC6YwiaY5QsuZ3SN5wsABJ8Ck",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 20362 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "2.7x inline proofs, offsets pointing at the wrong proofs (simulated)",
+      "ok": false,
+      "expected": "fail",
+      "version": 1,
+      "sizeV0": {
+        "size": 2520,
+        "limit": 1232,
+        "fits": false
+      },
+      "sizeV1": {
+        "size": 2498,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 4,
+      "unitsConsumed": 232200,
+      "unitsSource": "simulation",
+      "signature": null,
+      "err": {
+        "InstructionError": [
+          "3",
+          "InvalidInstructionData"
+        ]
+      },
+      "logs": [
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyCiphertextCommitmentEquality",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedGroupedCiphertext3HandlesValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedRangeProofU128",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::Transfer",
+        "Program log: Unexpected proof instruction",
+        "Program log: Error: InvalidInstructionData",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2479 of 1170279 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: invalid instruction data",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 9400 of 1177200 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd failed: invalid instruction data"
+      ]
+    },
+    {
+      "name": "2.7y inline proofs, a filler instruction not counted in the offsets (simulated)",
+      "ok": false,
+      "expected": "fail",
+      "version": 1,
+      "sizeV0": {
+        "size": 2626,
+        "limit": 1232,
+        "fits": false
+      },
+      "sizeV1": {
+        "size": 2605,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 5,
+      "unitsConsumed": 236657,
+      "unitsSource": "simulation",
+      "signature": null,
+      "err": {
+        "InstructionError": [
+          "4",
+          "InvalidInstructionData"
+        ]
+      },
+      "logs": [
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyCiphertextCommitmentEquality",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedGroupedCiphertext3HandlesValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedRangeProofU128",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4456 of 1177200 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::Transfer",
+        "Program log: Unexpected proof instruction",
+        "Program log: Error: InvalidInstructionData",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2479 of 1165822 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: invalid instruction data",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 9401 of 1172744 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd failed: invalid instruction data"
+      ]
+    },
+    {
+      "name": "2.7a confidential Transfer by CPI, proofs inline before it, offsets -3 -2 -1",
+      "ok": true,
+      "expected": "pass",
+      "version": 1,
+      "sizeV0": {
+        "size": 2520,
+        "limit": 1232,
+        "fits": false
+      },
+      "sizeV1": {
+        "size": 2498,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 4,
+      "unitsConsumed": 245378,
+      "unitsSource": "transaction",
+      "signature": "311VhbSe7qUV2S6ng48G17dNR42gfi41fYRTYFsKSrjAsfh9yHLpLZ34sfK4VVdNGqeTjTvbS7GiDtsFMFGdex2h",
+      "err": null,
+      "logs": [
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyCiphertextCommitmentEquality",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedGroupedCiphertext3HandlesValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedRangeProofU128",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::Transfer",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 15357 of 1170279 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 22578 of 1177200 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success"
+      ]
+    },
+    {
+      "name": "2.7b confidential Transfer as the third CPI, proofs inline after it, offsets +1 +2 +3",
+      "ok": true,
+      "expected": "pass",
+      "version": 1,
+      "sizeV0": {
+        "size": 2610,
+        "limit": 1232,
+        "fits": false
+      },
+      "sizeV1": {
+        "size": 2588,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 4,
+      "unitsConsumed": 262659,
+      "unitsSource": "transaction",
+      "signature": "3axSKjFetsvbzYGEJhrM7HitHeYPmQrLWTTDReQzQbHMXgLHRFmRNUXWbqDFrtLiyuHr8W3i9xu4zc6xDQDYcKJ6",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [2]",
+        "Program log: CreateIdempotent",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 5955 of 1391038 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [2]",
+        "Program log: CreateIdempotent",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 5955 of 1383518 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::Transfer",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 15363 of 1376070 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 39859 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyCiphertextCommitmentEquality",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedGroupedCiphertext3HandlesValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedRangeProofU128",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "2.8x CloseAccount by CPI before EmptyAccount is refused (simulated)",
+      "ok": false,
+      "expected": "fail",
+      "version": 0,
+      "sizeV0": {
+        "size": 342,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 321,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 7854,
+      "unitsSource": "simulation",
+      "signature": null,
+      "err": {
+        "InstructionError": [
+          "0",
+          {
+            "Custom": "23"
+          }
+        ]
+      },
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: CloseAccount",
+        "Program log: Error: An account can only be closed if its confidential balance is zero",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1680 of 1393826 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: custom program error: 0x17",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 7854 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd failed: custom program error: 0x17"
+      ]
+    },
+    {
+      "name": "escrow 1: zero ciphertext proof into a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 624,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 603,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 6300,
+      "unitsSource": "transaction",
+      "signature": "QvTLvDxe19ubSgLdgmqxHun5hT1Q1roPn8T3XsPqrKctBQLg1cPjqfVBXLPqrXQgLvDyWrQaf6YizAd5RPrrBhU",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyZeroCiphertext",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "2.8 EmptyAccount by CPI, proof in a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 376,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 355,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 8121,
+      "unitsSource": "transaction",
+      "signature": "6eVGLkwy1btQciNUrDv2iE5TFXPZf4Ywod2KukUCUmxVK2qBDD75wiE5WSNS5tWfyjjb447kA4yFXxvtNBJWST3",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::EmptyAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1542 of 1393789 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 7971 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "2.9 CloseAccount by CPI",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 342,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 321,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 8480,
+      "unitsSource": "transaction",
+      "signature": "cDByafVXCvrVoBBvMo1TZ4ZBpVhDfC9hs5fJhWQQKDj292ypswYJ5gpgQjSRFBNv8TqKzBXyQfPnqpZ4Cy8YBce",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: CloseAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1938 of 1393826 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 8330 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "2.10 CloseContextState by CPI, the two remaining accounts",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 384,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 363,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 15186,
+      "unitsSource": "transaction",
+      "signature": "66qfF5mDgTK6KYNA4yFh7xVYK8dNtnzYppJ2xgUm2UvN5U1nLyhBLh37JESWQva99ZC162denuyeAQb3oAmjRWyk",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 15036 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 2: pubkey validity proof into a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 527,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 507,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 2900,
+      "unitsSource": "transaction",
+      "signature": "5n2esTM5VTtE7zLt6B2KEBhsvnVUVQvtvxkQLp3yocvb46G8zRNvCGwfLVJB7FTWRaPyezn2bxh1QmrKj7WoLhgZ",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyPubkeyValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "3.1 Create, one instruction, 4 CPIs: create account, Reallocate, ConfigureAccount (context proof), DisableNonConfidentialCredits",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 553,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 532,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 37206,
+      "unitsSource": "transaction",
+      "signature": "fG6uDMh77GiN49puK3Xx7ZyMx3FTcyZHNonqR4wki7UquHFjkz984bACtxKbDrR2Ppi4JDMr7dLt2k9fWM2V5dX",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [2]",
+        "Program log: CreateIdempotent",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1447 of 1387211 compute units",
+        "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb qgAAAAAAAAA=",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 736 of 1380942 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1969 of 1377871 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 16953 of 1392551 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: Reallocate",
+        "Program log: account needs resize, +299 bytes",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 4904 of 1374208 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::ConfigureAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2113 of 1367903 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::DisableNonConfidentialCredits",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1060 of 1364542 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 37056 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "3.2 Create, same 4 CPIs, pubkey validity proof inline as the next instruction (offset +1)",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 685,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 665,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 40160,
+      "unitsSource": "transaction",
+      "signature": "66ZGgsrHa6gEZbHojMEa8PLn9fVDpdg4wgyAoA4yBySN8q5tqLp5z4ghkFmWKqJ4X1DWhpfZM7RGFhoN7matSgkL",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [2]",
+        "Program log: CreateIdempotent",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1447 of 1387211 compute units",
+        "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb qgAAAAAAAAA=",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 736 of 1380942 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1969 of 1377871 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 16953 of 1392551 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: Reallocate",
+        "Program log: account needs resize, +299 bytes",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 4904 of 1374208 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::ConfigureAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2463 of 1367899 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::DisableNonConfidentialCredits",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1060 of 1364188 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 37410 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyPubkeyValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "3.2x a public TransferChecked into an escrow that refuses public credits (simulated)",
+      "ok": false,
+      "expected": "fail",
+      "version": 0,
+      "sizeV0": {
+        "size": 417,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 396,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 2691,
+      "unitsSource": "simulation",
+      "signature": null,
+      "err": {
+        "InstructionError": [
+          "0",
+          {
+            "Custom": "49"
+          }
+        ]
+      },
+      "logs": [
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Non-confidential transfers disabled",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2691 of 1400000 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: custom program error: 0x31"
+      ]
+    },
+    {
+      "name": "escrow 2: depositor funds 100 by confidential transfer (top level)",
+      "ok": true,
+      "expected": "pass",
+      "version": 1,
+      "sizeV0": {
+        "size": 3009,
+        "limit": 1232,
+        "fits": false
+      },
+      "sizeV1": {
+        "size": 2993,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 10,
+      "unitsConsumed": 247853,
+      "unitsSource": "transaction",
+      "signature": "4vDtkxmZXU89VnwH4Tt4D7YG9UHBnXybvneogw4eD9tNdfd6VQ8wv6FU1Saq3LTnWmjwDGytrAPLuPBFfLWnVEvV",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyCiphertextCommitmentEquality",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedGroupedCiphertext3HandlesValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedRangeProofU128",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: ConfidentialTransferInstruction::Transfer",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 14703 of 1176750 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 3: depositor funds 100 by confidential transfer (top level)",
+      "ok": true,
+      "expected": "pass",
+      "version": 1,
+      "sizeV0": {
+        "size": 3009,
+        "limit": 1232,
+        "fits": false
+      },
+      "sizeV1": {
+        "size": 2993,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 10,
+      "unitsConsumed": 247853,
+      "unitsSource": "transaction",
+      "signature": "7bKdhcrk5XfjYocrHyhijgRvK6xvMQAC8Sp5bVVgfpfLr8ezeSXDQwLucDGVJE9vcHGLNfS97uKwsLYy75ZVNCr",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyCiphertextCommitmentEquality",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedGroupedCiphertext3HandlesValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedRangeProofU128",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: ConfidentialTransferInstruction::Transfer",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 14703 of 1176750 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "3.3 Lock, one instruction, 2 CPIs: ApplyPendingBalance, DisableConfidentialCredits",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 396,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 375,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 15482,
+      "unitsSource": "transaction",
+      "signature": "5i8mBKZYjFRMKQxPXDZGCPpP96oR79DyhLWBt5EskNb8dJUYPMxBUAiXgy5FLJWQuAg7DtnVwso1uAGvp31WGVJM",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::ApplyPendingBalance",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 8022 of 1395214 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::DisableConfidentialCredits",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1060 of 1385944 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 15332 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 3: Lock",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 396,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 375,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 15482,
+      "unitsSource": "transaction",
+      "signature": "4Xz14zvQe6hLKqBVVbwtxE1iXMB3qVAnH5WE12u48ggpCQiCu5WeLxSdvUojfTgCCoCBt67kUBFNwWzEBrHMu9wF",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::ApplyPendingBalance",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 8022 of 1395214 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::DisableConfidentialCredits",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1060 of 1385944 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 15332 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 2, settle: equality proof into a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 752,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 731,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 6700,
+      "unitsSource": "transaction",
+      "signature": "2kArADvhwX49FATSxPEHA9nGnWVPqcevo2K9MxV48qTT7bnLSdoceV7XsaSnkdHmW9b62NyAhwieNsbTHdp8dDuT",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyCiphertextCommitmentEquality",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 2, settle: validity proof into a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 976,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 955,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 16700,
+      "unitsSource": "transaction",
+      "signature": "3ibHMdQEwjr5eHadgAwZEZma6r66Zk3tpgHjpAGUyKkN9QHPKYeKtABQLXBQg4oEyJHTmjcwBFH4Yv6GqLcvM4en",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedGroupedCiphertext3HandlesValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 2, settle: range proof into a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 1,
+      "sizeV0": {
+        "size": 1432,
+        "limit": 1232,
+        "fits": false
+      },
+      "sizeV1": {
+        "size": 1411,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 200150,
+      "unitsSource": "transaction",
+      "signature": "2ayGWe58PFBuXuNhfFk4VayEpTJHzdHDAuzJFgKbyxSgwTsZK15uc7ScrPsAPNc9kabSTixDWGQiTZJCZfg4QK4p",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedRangeProofU128",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 2, settle: zero ciphertext proof for the balance after the transfer",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 624,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 603,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 6300,
+      "unitsSource": "transaction",
+      "signature": "446abWmW3By8iAV2jK6FcHKRDZpsBbauVMy96KHdWts3jTJ4NfYWC6oujYT1L3kuobfeBc2gFG2Avnq8x8Psmpwq",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyZeroCiphertext",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "3.4 Settle, one instruction, 3 CPIs: Transfer (context proofs), EmptyAccount (context proof), CloseAccount",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 729,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 707,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 28980,
+      "unitsSource": "transaction",
+      "signature": "5RffNQqFWdrL6gEy4v9sRn9oK9bjxf8v4TQDUWi15gPCk7pAGhUNdQUjQf67f5U3sFc1x5xHMMZCjxwQkuXuDPsx",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::Transfer",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 14709 of 1392533 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::EmptyAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1542 of 1376503 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: CloseAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1938 of 1373650 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 28830 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "3.4b after Settle: CloseContextState by CPI, the five context accounts of escrow 2",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 510,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 489,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 29660,
+      "unitsSource": "transaction",
+      "signature": "2Fqw2F6sWA2u7Vw5yrPpXkLVHRPpzCKkiFUrSfNYLd5U8YkpVXsfRNWerxFDnq24m3RV9LUmPHnmYdAeGQ5VsRLF",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 29510 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 3, settle: equality proof into a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 752,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 731,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 6700,
+      "unitsSource": "transaction",
+      "signature": "3vtbRXhhUKTR54RPCvpHBr9UUyk7LGtQVmrtDoRdPjs2GJnotgb2SeAVfhnpVnGPK8dxDkfcWnJovsTjNgpKpEmX",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyCiphertextCommitmentEquality",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 3, settle: validity proof into a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 976,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 955,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 16700,
+      "unitsSource": "transaction",
+      "signature": "21a74rRxt2SUjNHVxRfrT6o8uGn4783ub6qeioMWH84gRLfCvRYpqkoPvzsz6ni5dWPgch2Joe7E79eEdWXegDNt",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedGroupedCiphertext3HandlesValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 3, settle: range proof, create the context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 361,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 340,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 300,
+      "unitsSource": "transaction",
+      "signature": "2tsCBUYtUc1cJpTsSEY53QK8iGpzKTvLpYw3csq987doPcF2hZrBpxzbJshdC4bf3vexHsdPQjGY6DkL5tbZsQgd",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 3, settle: range proof, verify into the existing context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 1,
+      "sizeV0": {
+        "size": 1279,
+        "limit": 1232,
+        "fits": false
+      },
+      "sizeV1": {
+        "size": 1257,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 200000,
+      "unitsSource": "transaction",
+      "signature": "2f6BUjiyDUPGT5Qv8jSn2SGmvniaK1gi5GGAzTyw47yDBtDnMaCxDxGF7CauXRPgDknUVvd1kAS5E32uFMsUYXqZ",
+      "err": null,
+      "logs": [
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedRangeProofU128",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 3, settle: zero ciphertext proof for the balance after the transfer",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 624,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 603,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 6300,
+      "unitsSource": "transaction",
+      "signature": "4ZzEwgojYcfunQ871o2qRgyk2nYJWfNVgWogwmtnBfq6vbVZCqkAqUU9vfxKNFg7R9tgyXCr9ARFzUViGubPdY57",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyZeroCiphertext",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "3.5 Settle, one instruction, 7 CPIs: Transfer, EmptyAccount, CloseAccount and CloseContextState for the four proof accounts",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 801,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 779,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 49603,
+      "unitsSource": "transaction",
+      "signature": "5EHa9qUkd5aBonutou9rpn5Jmv2iw9xANiUuF35crMyRJZUyCL3F2ootTtuakTQMfRpWHNrkNkfK2rAax3REaWm3",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::Transfer",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 14709 of 1390567 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::EmptyAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1542 of 1374542 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: CloseAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1938 of 1371689 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 49453 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 4: Create with the proof inline",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 685,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 665,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 41660,
+      "unitsSource": "transaction",
+      "signature": "2wzJRNPTHnMJNGCeQ8s38QJatAi2Gd5YcFLB4zWjgkU1yHcFzDs6ktu8cUstKvuoFXxHk5CBHCVhC32rFRciieP5",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [2]",
+        "Program log: CreateIdempotent",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1447 of 1385711 compute units",
+        "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb qgAAAAAAAAA=",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 736 of 1379442 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1969 of 1376371 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 18453 of 1392551 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: Reallocate",
+        "Program log: account needs resize, +299 bytes",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 4904 of 1372708 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::ConfigureAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2463 of 1366399 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::DisableNonConfidentialCredits",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1060 of 1362688 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 38910 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyPubkeyValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 4: depositor funds 100 by confidential transfer (top level)",
+      "ok": true,
+      "expected": "pass",
+      "version": 1,
+      "sizeV0": {
+        "size": 3009,
+        "limit": 1232,
+        "fits": false
+      },
+      "sizeV1": {
+        "size": 2993,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 10,
+      "unitsConsumed": 247853,
+      "unitsSource": "transaction",
+      "signature": "58kJEpPDgUFFSMZLD3kpsBjufBveJGJEqnTxiFFLHRhDCJ2aagsKbPcst5dycNTMWiM3rNeBCkQqhJbC4GF5jCRu",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyCiphertextCommitmentEquality",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedGroupedCiphertext3HandlesValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedRangeProofU128",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: ConfidentialTransferInstruction::Transfer",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 14703 of 1176750 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 4: Lock",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 396,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 375,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 15482,
+      "unitsSource": "transaction",
+      "signature": "JHDvs2DgwMccW15YCX2VCrDNysrRtmjaXFvhQXUGt8eLqd5Qi6aUDRyhmDP39M4dE7YxU9ngspatgJA2fWB6g9x",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::ApplyPendingBalance",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 8022 of 1395214 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::DisableConfidentialCredits",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1060 of 1385944 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 15332 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 5: Create with the proof inline",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 685,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 665,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 44660,
+      "unitsSource": "transaction",
+      "signature": "5vnh94GvQttG4VYg5dZcks3TrUzn9FMUCF6w4bqeaSa1UzQMDNLU6tndZuY74ZtmjX7cStCapZaeEBx571uBuahN",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [2]",
+        "Program log: CreateIdempotent",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1447 of 1382711 compute units",
+        "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb qgAAAAAAAAA=",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 736 of 1376442 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1969 of 1373371 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 19953 of 1391051 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: Reallocate",
+        "Program log: account needs resize, +299 bytes",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 4904 of 1369708 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::ConfigureAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2463 of 1363399 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::DisableNonConfidentialCredits",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1060 of 1359688 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 41910 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyPubkeyValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 5: depositor funds 100 by confidential transfer (top level)",
+      "ok": true,
+      "expected": "pass",
+      "version": 1,
+      "sizeV0": {
+        "size": 3009,
+        "limit": 1232,
+        "fits": false
+      },
+      "sizeV1": {
+        "size": 2993,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 10,
+      "unitsConsumed": 247853,
+      "unitsSource": "transaction",
+      "signature": "25PXVccjsCKtgJXBS56eyvTGKeGmNcRcPRfxiprGvCzwmwCbP8mBK8cJHyeKkWkuS7nU7WhuqJxjqw8ksCszUcBD",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyCiphertextCommitmentEquality",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedGroupedCiphertext3HandlesValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedRangeProofU128",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: ConfidentialTransferInstruction::Transfer",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 14703 of 1176750 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 5: Lock",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 396,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 375,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 16982,
+      "unitsSource": "transaction",
+      "signature": "2xdRXctnmdoXBA7cmpYNtvzUf8weiJxRWoH8zRFrQYv1voVNv9KMbeqTQpBVFApTFCh6CJFzKg4xdndfwGzxn8mv",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::ApplyPendingBalance",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 8022 of 1393714 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::DisableConfidentialCredits",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1060 of 1384444 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 16832 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 4, settle: equality proof into a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 752,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 731,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 6700,
+      "unitsSource": "transaction",
+      "signature": "4R9b1X7NVinumgsFtRqoJatzhT9FdhBqjFGHWzCSw2YmMRsTzkxXXMPCipxEAs3b89MAt4Fzb1KF6yFhvyvkrFPb",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyCiphertextCommitmentEquality",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 4, settle: validity proof into a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 976,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 955,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 16700,
+      "unitsSource": "transaction",
+      "signature": "QkSBwebXRTrKLktmuj86x8vxLrjNsQFd6nyuqUYaXDZCgZKft9e6DdA54UbNvmZkT8NXJ5ejxYv1k1YLww5sJ8z",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedGroupedCiphertext3HandlesValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 4, settle: range proof into a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 1,
+      "sizeV0": {
+        "size": 1432,
+        "limit": 1232,
+        "fits": false
+      },
+      "sizeV1": {
+        "size": 1411,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 200150,
+      "unitsSource": "transaction",
+      "signature": "2nj8SvFRjwapxrcdvPGcfpZrsGTpiR5YV3rWcSLdT4c7AKgT94W1zdJMsGN72xMqnoMEy7dF4PmxDub3VWS2mtvH",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedRangeProofU128",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 4, settle: zero ciphertext proof for the balance after the transfer",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 624,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 603,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 6300,
+      "unitsSource": "transaction",
+      "signature": "5fXCXdQZGd9JGxDYbSzrQnkk4krELRvjEVpo8xMc8ttopTsnUGoTYGAUApuk93W97foeF6Ar4cLc5eRKzuvXu8R2",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyZeroCiphertext",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 5, settle: equality proof into a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 752,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 731,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 6700,
+      "unitsSource": "transaction",
+      "signature": "2Q79CD99v6m4r4HykK7cr9xqaVgT9jysa3soyeow9cve6fdcX7SiBtjzjh7etrxR4Ai27iYfPpvog8HTDViwfZMP",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyCiphertextCommitmentEquality",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 5, settle: validity proof into a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 976,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 955,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 16700,
+      "unitsSource": "transaction",
+      "signature": "5qsiYmXG3XSaEerSB4VtDBTbQbdknCPwWvGq7yQuK5BUG4jC1FCZKmJZEWBYM1tCNVi9QVozxHu8U98HHE6ENksn",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedGroupedCiphertext3HandlesValidity",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 5, settle: range proof into a context account",
+      "ok": true,
+      "expected": "pass",
+      "version": 1,
+      "sizeV0": {
+        "size": 1432,
+        "limit": 1232,
+        "fits": false
+      },
+      "sizeV1": {
+        "size": 1411,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 200150,
+      "unitsSource": "transaction",
+      "signature": "XbBzEpYz7WzRtubRLLoUJYBKGSNhdj6BW8ewGqcsPTApLwuAfQX1xDTGLCGgYLP5EdtKF1T7VYMFueMVa8YSvh7",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyBatchedRangeProofU128",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "escrow 5, settle: zero ciphertext proof for the balance after the transfer",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 624,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 603,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 6300,
+      "unitsSource": "transaction",
+      "signature": "UaL1QLfmDabm9XQSu5HVwwXW6Rad23VXPAGXPoVfQtqeGL8ThiCNRksyXCyfApNU8XFfP2V8FfmCNSkLJFtGJH4",
+      "err": null,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [1]",
+        "VerifyZeroCiphertext",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "3.6x two escrows, each Transfer, EmptyAccount, CloseAccount, without closing the proof accounts (simulated)",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 1186,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 1164,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 59310,
+      "unitsSource": "simulation",
+      "signature": null,
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::Transfer",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 14709 of 1392533 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::EmptyAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1542 of 1376503 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: CloseAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1938 of 1373650 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 28830 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::Transfer",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 14709 of 1362203 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::EmptyAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1542 of 1346173 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: CloseAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1938 of 1343320 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 30330 of 1371170 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    },
+    {
+      "name": "3.6 two escrows, each Transfer, EmptyAccount, CloseAccount and four CloseContextState: 14 CPIs in one transaction",
+      "ok": true,
+      "expected": "pass",
+      "version": 1,
+      "sizeV0": {
+        "size": 1298,
+        "limit": 1232,
+        "fits": false
+      },
+      "sizeV1": {
+        "size": 1276,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 2,
+      "unitsConsumed": 100406,
+      "unitsSource": "transaction",
+      "signature": "BDoHBqR6D8hd1xC4AHrk8KiymEv1CCsAWEdWGKSNp78gJGJTTdZ53m6Q6fju8D9mQ7tSir67JJTjoFMNgHKwj6s",
+      "err": null,
+      "logs": [
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::Transfer",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 14709 of 1390567 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::EmptyAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1542 of 1374542 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: CloseAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1938 of 1371689 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 49453 of 1400000 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd invoke [1]",
+        "Program log: Instruction: Relay",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::Transfer",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 14709 of 1339614 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: ConfidentialTransferInstruction::EmptyAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1542 of 1323589 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: CloseAccount",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1938 of 1320736 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 invoke [2]",
+        "CloseContextState",
+        "Program ZkE1Gama1Proof11111111111111111111111111111 success",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 50953 of 1350547 compute units",
+        "Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd success"
+      ]
+    },
+    {
+      "name": "recipient applies the pending balance",
+      "ok": true,
+      "expected": "pass",
+      "version": 0,
+      "sizeV0": {
+        "size": 387,
+        "limit": 1232,
+        "fits": true
+      },
+      "sizeV1": {
+        "size": 366,
+        "limit": 4096,
+        "fits": true
+      },
+      "instructions": 1,
+      "unitsConsumed": 8172,
+      "unitsSource": "transaction",
+      "signature": "2BH1SSPAvP3FfWT8yQKCeyWEToJdeVaTK9gJL6QLceBGS7qtumPRbxebt4WPGBW1F78BAC2c2FSoE3NvLcxKfppN",
+      "err": null,
+      "logs": [
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: ConfidentialTransferInstruction::ApplyPendingBalance",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 8022 of 1400000 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "escrow 1 carries the escrow ElGamal key and is approved",
+      "ok": true,
+      "detail": "approved true"
+    },
+    {
+      "name": "the funding sits in the pending balance",
+      "ok": true,
+      "detail": "credit counter 1"
+    },
+    {
+      "name": "escrow 1 available balance decrypts to 100",
+      "ok": true,
+      "detail": "100000000"
+    },
+    {
+      "name": "pending credit counter back to 0",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "allowConfidentialCredits is false",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "escrow 1 available balance decrypts to 40",
+      "ok": true,
+      "detail": "40000000"
+    },
+    {
+      "name": "the new balance ciphertext is the one computed before the transfer",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "the three context accounts are gone",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "escrow 1 available balance decrypts to 25",
+      "ok": true,
+      "detail": "25000000"
+    },
+    {
+      "name": "escrow 1 available balance decrypts to 0",
+      "ok": true,
+      "detail": "0"
+    },
+    {
+      "name": "the escrow token account is gone",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "the last two context accounts are gone",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "escrow 3 is configured and refuses public credits",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "escrow 2 is closed",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "escrow 3 is closed",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "its four proof accounts are gone",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "escrows 4 and 5 are closed",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "the recipient's confidential balance decrypts to 400",
+      "ok": true,
+      "detail": "400000000"
+    },
+    {
+      "name": "no escrow account of the three is left",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "summary": {
+    "steps": 64,
+    "unexpected": [],
+    "badChecks": []
+  }
+}

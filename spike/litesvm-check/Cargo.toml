@@ -1,0 +1,20 @@
+# DvP confidential leg spike, question 4: does the LiteSVM version the DvP
+# integration tests use run the ZK ElGamal Proof program?
+# Cargo.lock is copied from solana-foundation/dvp at df9919e, so litesvm,
+# the Agave crates and spl-token-2022 resolve to the versions DvP's tests use.
+[package]
+name = "litesvm-check"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+
+[dev-dependencies]
+litesvm = "=0.7.0"
+solana-sdk = "2.3.1"
+solana-zk-sdk = "2.3"
+spl-token-2022 = { version = "9.0.0", features = ["no-entrypoint"] }
+spl-token-confidential-transfer-proof-extraction = "0.4"
+
+[workspace]

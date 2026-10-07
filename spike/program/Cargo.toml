@@ -1,0 +1,31 @@
+[package]
+name = "dvp-spike"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "dvp_spike"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build"]
+anchor-debug = []
+custom-heap = []
+custom-panic = []
+
+[dependencies]
+anchor-lang = "=1.2.0"
+
+[lints.rust]
+unexpected_cfgs = { level = "allow" }
+
+[profile.release]
+overflow-checks = true
+
+[workspace]

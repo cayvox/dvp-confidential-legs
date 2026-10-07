@@ -1,0 +1,135 @@
+
+== setup ==
+[pass] setup: mint with ConfidentialTransferMint · v0 · 2998 CU (transaction) · v0 503/1232 · v1 484/4096
+[pass] setup: depositor confidential account · v0 · 28570 CU (transaction) · v0 670/1232 · v1 652/4096
+[pass] setup: recipient confidential account · v0 · 27070 CU (transaction) · v0 670/1232 · v1 652/4096
+[pass] setup: mint 1000, deposit 800 to the depositor's confidential balance · v0 · 11663 CU (transaction) · v0 400/1232 · v1 380/4096
+[pass] setup: depositor applies the pending balance · v0 · 8172 CU (transaction) · v0 387/1232 · v1 366/4096
+
+== question 2: step by step, escrow 1 ==
+[pass] escrow 1: create the PDA's token account (top level) · v0 · 18605 CU (transaction) · v0 378/1232 · v1 357/4096
+[pass] 2.1 Reallocate by CPI · v0 · 11860 CU (transaction) · v0 377/1232 · v1 356/4096
+[pass] escrow 1: pubkey validity proof into a context account · v0 · 2900 CU (transaction) · v0 527/1232 · v1 507/4096
+[pass] 2.2 ConfigureAccount by CPI, proof in a context account · v0 · 9083 CU (transaction) · v0 453/1232 · v1 432/4096
+   ok  escrow 1 carries the escrow ElGamal key and is approved (approved true)
+[pass] escrow 1: depositor funds 100 by confidential transfer (top level) · v1 · 247853 CU (transaction) · v0 3009/1232 · v1 2993/4096
+   ok  the funding sits in the pending balance (credit counter 1)
+[pass] 2.3 ApplyPendingBalance by CPI · v0 · 14217 CU (transaction) · v0 386/1232 · v1 365/4096
+   ok  escrow 1 available balance decrypts to 100 (100000000)
+   ok  pending credit counter back to 0
+[pass] 2.4 DisableConfidentialCredits by CPI · v0 · 7255 CU (transaction) · v0 342/1232 · v1 321/4096
+   ok  allowConfidentialCredits is false
+[fail] 2.4b a confidential transfer into the locked escrow is refused · v1 · 235125 CU (simulation) · v0 3009/1232 · v1 2993/4096
+       err: { "InstructionError": [ "6", { "Custom": "25" } ] }
+       Program ZkE1Gama1Proof11111111111111111111111111111 success
+       Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]
+       Program log: ConfidentialTransferInstruction::Transfer
+       Program log: Error: Account not accepting deposits or transfers
+       Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 11875 of 1176750 compute units
+       Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: custom program error: 0x19
+[pass] escrow 1, transfer of 60: equality proof into a context account · v0 · 6700 CU (transaction) · v0 752/1232 · v1 731/4096
+[pass] escrow 1, transfer of 60: validity proof into a context account · v0 · 16700 CU (transaction) · v0 976/1232 · v1 955/4096
+[pass] escrow 1, transfer of 60: range proof into a context account · v1 · 200150 CU (transaction) · v0 1432/1232 · v1 1411/4096
+[pass] 2.5 confidential Transfer by CPI, proofs in context accounts · v0 · 22884 CU (transaction) · v0 675/1232 · v1 653/4096
+   ok  escrow 1 available balance decrypts to 40 (40000000)
+   ok  the new balance ciphertext is the one computed before the transfer
+[pass] 2.6 CloseContextState by CPI, three accounts, PDA is their authority · v0 · 20512 CU (transaction) · v0 426/1232 · v1 405/4096
+   ok  the three context accounts are gone
+
+== question 2: proofs inline, what the instruction offset means under CPI ==
+[fail] 2.7x inline proofs, offsets pointing at the wrong proofs (simulated) · v1 · 232200 CU (simulation) · v0 2520/1232 · v1 2498/4096
+       err: { "InstructionError": [ "3", "InvalidInstructionData" ] }
+       Program log: Unexpected proof instruction
+       Program log: Error: InvalidInstructionData
+       Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2479 of 1170279 compute units
+       Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: invalid instruction data
+       Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 9400 of 1177200 compute units
+       Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd failed: invalid instruction data
+[fail] 2.7y inline proofs, a filler instruction not counted in the offsets (simulated) · v1 · 236657 CU (simulation) · v0 2626/1232 · v1 2605/4096
+       err: { "InstructionError": [ "4", "InvalidInstructionData" ] }
+       Program log: Unexpected proof instruction
+       Program log: Error: InvalidInstructionData
+       Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2479 of 1165822 compute units
+       Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: invalid instruction data
+       Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 9401 of 1172744 compute units
+       Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd failed: invalid instruction data
+[pass] 2.7a confidential Transfer by CPI, proofs inline before it, offsets -3 -2 -1 · v1 · 245378 CU (transaction) · v0 2520/1232 · v1 2498/4096
+   ok  escrow 1 available balance decrypts to 25 (25000000)
+[pass] 2.7b confidential Transfer as the third CPI, proofs inline after it, offsets +1 +2 +3 · v1 · 262659 CU (transaction) · v0 2610/1232 · v1 2588/4096
+   ok  escrow 1 available balance decrypts to 0 (0)
+
+== question 2: empty and close, escrow 1 ==
+[fail] 2.8x CloseAccount by CPI before EmptyAccount is refused (simulated) · v0 · 7854 CU (simulation) · v0 342/1232 · v1 321/4096
+       err: { "InstructionError": [ "0", { "Custom": "23" } ] }
+       Program log: Instruction: CloseAccount
+       Program log: Error: An account can only be closed if its confidential balance is zero
+       Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1680 of 1393826 compute units
+       Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: custom program error: 0x17
+       Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd consumed 7854 of 1400000 compute units
+       Program 5xhvtBJTUsBwELm9o8B1gW6Rwj86Gmr2b8Hjeyf6SLNd failed: custom program error: 0x17
+[pass] escrow 1: zero ciphertext proof into a context account · v0 · 6300 CU (transaction) · v0 624/1232 · v1 603/4096
+[pass] 2.8 EmptyAccount by CPI, proof in a context account · v0 · 8121 CU (transaction) · v0 376/1232 · v1 355/4096
+[pass] 2.9 CloseAccount by CPI · v0 · 8480 CU (transaction) · v0 342/1232 · v1 321/4096
+   ok  the escrow token account is gone
+[pass] 2.10 CloseContextState by CPI, the two remaining accounts · v0 · 15186 CU (transaction) · v0 384/1232 · v1 363/4096
+   ok  the last two context accounts are gone
+
+== question 3: Create for one confidential leg ==
+[pass] escrow 2: pubkey validity proof into a context account · v0 · 2900 CU (transaction) · v0 527/1232 · v1 507/4096
+[pass] 3.1 Create, one instruction, 4 CPIs: create account, Reallocate, ConfigureAccount (context proof), DisableNonConfidentialCredits · v0 · 37206 CU (transaction) · v0 553/1232 · v1 532/4096
+[pass] 3.2 Create, same 4 CPIs, pubkey validity proof inline as the next instruction (offset +1) · v0 · 40160 CU (transaction) · v0 685/1232 · v1 665/4096
+   ok  escrow 3 is configured and refuses public credits
+[fail] 3.2x a public TransferChecked into an escrow that refuses public credits (simulated) · v0 · 2691 CU (simulation) · v0 417/1232 · v1 396/4096
+       err: { "InstructionError": [ "0", { "Custom": "49" } ] }
+       Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]
+       Program log: Instruction: TransferChecked
+       Program log: Non-confidential transfers disabled
+       Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2691 of 1400000 compute units
+       Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: custom program error: 0x31
+
+== question 3: Lock and Settle for one confidential leg ==
+[pass] escrow 2: depositor funds 100 by confidential transfer (top level) · v1 · 247853 CU (transaction) · v0 3009/1232 · v1 2993/4096
+[pass] escrow 3: depositor funds 100 by confidential transfer (top level) · v1 · 247853 CU (transaction) · v0 3009/1232 · v1 2993/4096
+[pass] 3.3 Lock, one instruction, 2 CPIs: ApplyPendingBalance, DisableConfidentialCredits · v0 · 15482 CU (transaction) · v0 396/1232 · v1 375/4096
+[pass] escrow 3: Lock · v0 · 15482 CU (transaction) · v0 396/1232 · v1 375/4096
+[pass] escrow 2, settle: equality proof into a context account · v0 · 6700 CU (transaction) · v0 752/1232 · v1 731/4096
+[pass] escrow 2, settle: validity proof into a context account · v0 · 16700 CU (transaction) · v0 976/1232 · v1 955/4096
+[pass] escrow 2, settle: range proof into a context account · v1 · 200150 CU (transaction) · v0 1432/1232 · v1 1411/4096
+[pass] escrow 2, settle: zero ciphertext proof for the balance after the transfer · v0 · 6300 CU (transaction) · v0 624/1232 · v1 603/4096
+[pass] 3.4 Settle, one instruction, 3 CPIs: Transfer (context proofs), EmptyAccount (context proof), CloseAccount · v0 · 28980 CU (transaction) · v0 729/1232 · v1 707/4096
+   ok  escrow 2 is closed
+[pass] 3.4b after Settle: CloseContextState by CPI, the five context accounts of escrow 2 · v0 · 29660 CU (transaction) · v0 510/1232 · v1 489/4096
+[pass] escrow 3, settle: equality proof into a context account · v0 · 6700 CU (transaction) · v0 752/1232 · v1 731/4096
+[pass] escrow 3, settle: validity proof into a context account · v0 · 16700 CU (transaction) · v0 976/1232 · v1 955/4096
+[pass] escrow 3, settle: range proof, create the context account · v0 · 300 CU (transaction) · v0 361/1232 · v1 340/4096
+[pass] escrow 3, settle: range proof, verify into the existing context account · v1 · 200000 CU (transaction) · v0 1279/1232 · v1 1257/4096
+[pass] escrow 3, settle: zero ciphertext proof for the balance after the transfer · v0 · 6300 CU (transaction) · v0 624/1232 · v1 603/4096
+[pass] 3.5 Settle, one instruction, 7 CPIs: Transfer, EmptyAccount, CloseAccount and CloseContextState for the four proof accounts · v0 · 49603 CU (transaction) · v0 801/1232 · v1 779/4096
+   ok  escrow 3 is closed
+   ok  its four proof accounts are gone
+
+== question 3: two confidential escrows settled in one transaction ==
+[pass] escrow 4: Create with the proof inline · v0 · 41660 CU (transaction) · v0 685/1232 · v1 665/4096
+[pass] escrow 4: depositor funds 100 by confidential transfer (top level) · v1 · 247853 CU (transaction) · v0 3009/1232 · v1 2993/4096
+[pass] escrow 4: Lock · v0 · 15482 CU (transaction) · v0 396/1232 · v1 375/4096
+[pass] escrow 5: Create with the proof inline · v0 · 44660 CU (transaction) · v0 685/1232 · v1 665/4096
+[pass] escrow 5: depositor funds 100 by confidential transfer (top level) · v1 · 247853 CU (transaction) · v0 3009/1232 · v1 2993/4096
+[pass] escrow 5: Lock · v0 · 16982 CU (transaction) · v0 396/1232 · v1 375/4096
+[pass] escrow 4, settle: equality proof into a context account · v0 · 6700 CU (transaction) · v0 752/1232 · v1 731/4096
+[pass] escrow 4, settle: validity proof into a context account · v0 · 16700 CU (transaction) · v0 976/1232 · v1 955/4096
+[pass] escrow 4, settle: range proof into a context account · v1 · 200150 CU (transaction) · v0 1432/1232 · v1 1411/4096
+[pass] escrow 4, settle: zero ciphertext proof for the balance after the transfer · v0 · 6300 CU (transaction) · v0 624/1232 · v1 603/4096
+[pass] escrow 5, settle: equality proof into a context account · v0 · 6700 CU (transaction) · v0 752/1232 · v1 731/4096
+[pass] escrow 5, settle: validity proof into a context account · v0 · 16700 CU (transaction) · v0 976/1232 · v1 955/4096
+[pass] escrow 5, settle: range proof into a context account · v1 · 200150 CU (transaction) · v0 1432/1232 · v1 1411/4096
+[pass] escrow 5, settle: zero ciphertext proof for the balance after the transfer · v0 · 6300 CU (transaction) · v0 624/1232 · v1 603/4096
+[pass] 3.6x two escrows, each Transfer, EmptyAccount, CloseAccount, without closing the proof accounts (simulated) · v0 · 59310 CU (simulation) · v0 1186/1232 · v1 1164/4096
+[pass] 3.6 two escrows, each Transfer, EmptyAccount, CloseAccount and four CloseContextState: 14 CPIs in one transaction · v1 · 100406 CU (transaction) · v0 1298/1232 · v1 1276/4096
+   ok  escrows 4 and 5 are closed
+
+== end state ==
+[pass] recipient applies the pending balance · v0 · 8172 CU (transaction) · v0 387/1232 · v1 366/4096
+   ok  the recipient's confidential balance decrypts to 400 (400000000)
+   ok  no escrow account of the three is left
+
+64 steps, 0 not as expected, 0 bad state checks. Results: results/localnet.json

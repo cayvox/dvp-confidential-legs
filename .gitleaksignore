@@ -1,0 +1,4 @@
+# False positives of the generic key rule: the value is the public address of
+# a token account that was derived for a simulation and never created.
+spike/results/mainnet.json:generic-api-key:56
+spike/results/mainnet-attempt-1-missing-fee-extension.json:generic-api-key:56

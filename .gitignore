@@ -1,0 +1,9 @@
+node_modules/
+target/
+out/
+*.so
+*-keypair.json
+keys/
+.env
+.env.*
+.DS_Store
